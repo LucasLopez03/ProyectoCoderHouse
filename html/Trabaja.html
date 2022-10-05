@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"> 
     <title>Contacto</title>
 </head>
 
@@ -12,7 +13,11 @@
 
     <header>
 
-        <h1>SITIO DE HOTELES</h1>
+        <div class="container-fluid">
+
+            <div class="titulo">
+                Hoteles.com
+            </div>
         
             <nav >
                 <ul class="menu">
@@ -22,49 +27,46 @@
                     <li><a href="../html/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
-        
+        </div>
         </header>
 
         <main>
+
+            <div class="container">
 
             <section class="contenedor__contacto">
 
                 <article>
 
-                    <h2 class="contacto_tittle">TRABAJA CON NOSOTROS</h2>
+                    <h2 class="contacto_tittle">TRABAJÁ CON NOSOTROS</h2>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>    
+                    <p>Si llegaste hasta acá es porque te interesa trabajar con nosotros. Te queremos conocer! Completá el formulario y carga tu cv, nosotros lo estaremos revisando a la brevedad y nos estaremos comunicando con vos!.</p>    
 
                 </article>
 
                 <article class="formulario__contacto">
-
-
-                <div id="after_submit"></div>
-                    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-                    <div class="row">
-                        <label class="required" for="name">Nombre:</label><br />
-                        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-                        <span id="name_validation" class="error_message"></span>
-                    </div>
-                    <div class="row">
-                        <label class="required" for="email">Email:</label><br />
-                        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-                        <span id="email_validation" class="error_message"></span>
-                    </div>
-                    <div class="row">
-                        <label class="required" for="message">Mensaje:</label><br />
-                        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-                        <span id="message_validation" class="error_message"></span>
-                    </div>
-                        
-                        <input id="submit_button" type="submit" value="Enviar" />
+                    <form action="#">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre completo</label>
+                            <input type="email" class="form-control" id="name" placeholder="Pedro Perez">
+                          </div>
+                          <div class="mb-3">
+                            <label for="mail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="mail" placeholder="pedro@gmail.com">
+                          </div>
+                          <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                          </div>
+                          <div class="mb-3">
+                            <label for="archivo" class="form-label">Dejános tu cv</label>
+                            <input class="form-control" type="file" id="archivo">
+                          </div>
+                          <input id="boton__enviar" type="submit" value="Enviar" />
                     </form>
                 </article>
-
             </section>
-
-
+        </div>
 
 
         </main>
@@ -95,11 +97,9 @@
                     <h3>SEGUINOS!</h3>
         
                     <ul class="menu__footer">
-        
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">Facebook</a></li>
-                        <li><a href="">Youtube</a></li>
-                
+                        <li><a href=""><img src="../images/instagram.svg"> Instagram</a></li>
+                        <li><a href=""><img src="../images/facebook.svg"> Facebook</a></li>
+                        <li><a href=""><img src="../images/twitter.svg"> Twitter</a></li>
                     </ul>
         
                 </article>

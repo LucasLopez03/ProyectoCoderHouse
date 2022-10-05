@@ -23,11 +23,16 @@ a{
     text-decoration: none;
 }
 
+.titulo{
+    font-size: 40px;
+    color: #aaa;
+    padding-left: 133px;
+}
+
 nav {
     width: 80%;
     margin: 0 auto;
     background: #fff;
-    margin-top: 20px;
     padding: 5px 0;
     box-shadow: 0px 5px 0px #dedede;
   }
@@ -129,7 +134,7 @@ h2{
 
 .contenedor__footer{
     display: flex;
-    text-align: center;
+    text-align: center; 
     justify-content: center;
 }
 
@@ -208,13 +213,26 @@ h2{
 /*---Contenedor nosotros ---*/
 
 .contenedor__nosotros{
-    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nosotros__texto{
+    padding: 20px;
+}
+
+.link__trabaja{
+    padding: 20px;
 }
 
 /*--- Contenedor formulario contacto---*/
 
 .contenedor__contacto{
+    align-items: center;
     text-align: center;
+    padding: 20px;
 }
 
 .contacto_tittle{
@@ -222,8 +240,23 @@ h2{
 }
 
 .formulario__contacto{
+    margin: auto;
     text-align: center;
+    align-items: center;
     padding: 20px;
+    width: 400px;
+}
+
+/* ----- Tarjeta contacto ------*/
+
+.contenedor__tarjeta{
+    padding: 20px;
+}
+.tarjeta__contacto{
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 20px;
+    border: 0.5px solid black;    
 }
 
 /*----titulos---*/
@@ -242,6 +275,23 @@ h2{
 
  }
 
+
+ @media (max-width:  1199.98px) {
+    .contenedor__nosotros{
+        display: inline;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagen__reunion{
+        width: 400px;
+        align-items: center;
+        justify-content: center;
+    }
+    .nosotros__texto{
+        font-size: 20px;
+    }
+}
+
 @media (max-width: 575.98px) {
     .imagen__inicio{
         width: 300px;
@@ -249,6 +299,30 @@ h2{
     .imagen__carousel{
         width: 150%;
 
+    }
+    .titulo{
+        padding-left: 50px;
+    }
+    .contenedor__nosotros{
+        display: inline;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagen__reunion{
+        width: 200px;
+        align-items: center;
+        justify-content: center;
+    }
+    .nosotros__texto{
+        font-size: 10px;
+    }
+
+    .formulario__contacto{
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+        width: 300px;
     }
  }
  

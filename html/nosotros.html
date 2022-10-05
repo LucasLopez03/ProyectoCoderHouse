@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <title>Nosotros</title>
 </head>
 
@@ -12,7 +13,11 @@
 
     <header>
 
-        <h1>SITIO DE HOTELES</h1>
+        <div class="container-fluid">
+
+        <div class="titulo">
+            Hoteles.com
+        </div>
         
             <nav >
                 <ul class="menu">
@@ -22,26 +27,34 @@
                     <li><a href="../html/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
-        
+        </div>
         </header>
     
         <main>
 
+            <div class="container">
             <section class="contenedor__nosotros">
-
-                <article>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, earum excepturi perferendis placeat esse nam facere dignissimos ratione beatae nesciunt nihil incidunt at, autem quidem labore corporis. Nesciunt, facere veniam?</p>
-
-                    <img src="../images/reunion.jpg" alt="Foto de reunion">
-
+                <article class="nosotros__texto">
+                        Hoteles.com, fundada en 2010 en Buenos Aires, pasó de ser una pequeña start-up en Argentina a convertirse en una de las empresas digitales de hoteles líder en el mundo. Hoteles.com, tiene como misión hacer que cualquier viajero del mundo pueda eligir y acceder el mejor hotel al que pueda acceder y sentirse como en su casa.
+                    </p>
+                    <p>
+                        Hoteles.com invierte en tecnología que ayuda a viajar sin complicaciones y así conecta a millones de personas de la comunidad viajera con experiencias memorables, una variedad de opciones alojamientos increíbles: desde casas a hoteles y mucho más. Como una de las plataformas de hoteles más grande del mundo, tanto para marcas establecidas como para emprendedores de todos los tamaños, Hoteles.com permite que alojamientos de todo el mundo lleguen a una audiencia internacional y puedan hacer crecer sus negocios.
+                    </p>
+                    <p>Hoteles.com está disponible en 4 idiomas y ofrece más de 500 mil de unidades de alojamiento, entre las cuales se incluyen más de 200 mil de casas, departamentos y otros lugares únicos para alojarse. No importa dónde quieras ir o qué quieras hacer, Hoteles.com hace que sea fácil, y además te ofrece atención al cliente las 24 horas, todos los días.</p>
                 </article>
 
+                <article>
+                    <img src="../images/reunion.jpg" alt="Foto de reunion" class="imagen__reunion">
+                </article>
             </section>
+            
+            <hr>
 
+            <h2 class="link__trabaja">¿Tenés ganas de trabajar con nostros? Entrá al <a href="../html/trabaja.html">link</a>, dejános tu info y CV!</h2>
+
+            </div>
 
         </main>
-
 
         <footer>
     
@@ -50,11 +63,9 @@
                 <article>
         
                     <form action="#">
-        
                         <label for="">¿Quieres ofertas exclusivas de hoteles? ¡Suscríbete al boletín de noticias!</label>
                         <input type="text">
                         <input type="button" value="Suscribirse">
-        
                     </form>
         
                 </article>
@@ -68,11 +79,9 @@
                     <h3>SEGUINOS!</h3>
         
                     <ul class="menu__footer">
-        
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">Facebook</a></li>
-                        <li><a href="">Youtube</a></li>
-                
+                        <li><a href=""><img src="../images/instagram.svg"> Instagram</a></li>
+                        <li><a href=""><img src="../images/facebook.svg"> Facebook</a></li>
+                        <li><a href=""><img src="../images/twitter.svg"> Twitter</a></li>
                     </ul>
         
                 </article>
@@ -82,12 +91,10 @@
                     <h3>MENÚ</h3>
         
                     <ul class="menu__footer">
-        
                         <li><a href="../html/index.html">Inicio</a></li>
                         <li><a href="../html/destinos.html">Destinos</a></li>
                         <li><a href="../html/contacto.html">Contacto</a></li>
-                        <li><a href="../html/trabaja.html">Trabaja con nosotros</a></li>
-
+                        <li><a href="../html/trabaja.html">Trabajá con nosotros</a></li>
                     </ul>
         
                 </article>

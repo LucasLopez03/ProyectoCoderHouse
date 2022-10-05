@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <title>Contacto</title>
 </head>
 
@@ -12,7 +13,11 @@
 
     <header>
 
-        <h1>SITIO DE HOTELES</h1>
+        <div class="container-fluid">
+
+            <div class="titulo">
+                Hoteles.com
+            </div>
         
             <nav >
                 <ul class="menu">
@@ -22,10 +27,12 @@
                     <li><a href="../html/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
-        
+        </div>
         </header>
 
         <main>
+
+            <div class="container text-center">
 
             <section class="contenedor__contacto">
 
@@ -33,38 +40,67 @@
 
                     <h2 class="contacto_tittle">CONTACTANOS</h2>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>    
+                    <p>¿Necesitás ayuda? Aquí encontrarás respuestas a las dudas más comúnes. En caso que no la encuentres, completá el formulario <a href="#formulario">aqui</a> de contacto para darte una respuesta más exacta en base a tu inquietud.</p>    
 
                 </article>
 
+                <div class="row">
+
+                    
+                    <div class="col-6 contenedor__tarjeta">
+                        <article  class="tarjeta__contacto">
+                            <p>¿Necesitás ayuda con una reserva?</p>
+                            <a href="#">Ve a la sección Reservas</a>
+                        </article>
+                    </div>
+
+                    <div class="col-6 contenedor__tarjeta">
+                        <article  class="tarjeta__contacto">
+                             <p>¿Tenés alguna pregunta?</p>
+                             <a href="#">Ve a nuestro Centro de ayuda</a>
+                        </article>
+                    </div>
+
+                    <div class="col-6 contenedor__tarjeta">
+                        <article  class="tarjeta__contacto">
+                            <p>¿Querés trabajar en Booking.com?</p>
+                            <a href="../html/Trabaja.html">Mirá nuestra página Trabajá con nosotros</a>
+                        </article>
+                    </div>
+
+                    <div class="col-6 contenedor__tarjeta">
+                        <article  class="tarjeta__contacto">
+                            <p>¿Tenés alguna duda sobre tu pago?</p>
+                            <a href="#">Ve a la sección Pagos</a>
+                        </article>
+                    </div>
+
+                </div>
+
+                
                 <article class="formulario__contacto">
 
-
-                <div id="after_submit"></div>
-                    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-                    <div class="row">
-                        <label class="required" for="name">Nombre:</label><br />
-                        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-                        <span id="name_validation" class="error_message"></span>
-                    </div>
-                    <div class="row">
-                        <label class="required" for="email">Email:</label><br />
-                        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-                        <span id="email_validation" class="error_message"></span>
-                    </div>
-                    <div class="row">
-                        <label class="required" for="message">Mensaje:</label><br />
-                        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-                        <span id="message_validation" class="error_message"></span>
-                    </div>
-                        
-                        <input id="submit_button" type="submit" value="Enviar" />
+                    <form action="#" name="formulario" id="formulario">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="email" class="form-control" id="name" placeholder="Pedro Perez">
+                          </div>
+                          <div class="mb-3">
+                            <label for="mail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="mail" placeholder="pedro@gmail.com">
+                          </div>
+                          <div class="mb-3">
+                            <label for="mensaje" class="form-label">Dejános tus comentarios</label>
+                            <textarea class="form-control" id="mensaje" rows="3" placeholder="Ingrese su mensaje"></textarea>
+                          </div>
+                          <input id="submit_button" type="submit" value="Enviar" />
                     </form>
+
                 </article>
 
             </section>
 
-
+        </div>
 
 
         </main>
@@ -95,11 +131,9 @@
                     <h3>SEGUINOS!</h3>
         
                     <ul class="menu__footer">
-        
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">Facebook</a></li>
-                        <li><a href="">Youtube</a></li>
-                
+                        <li><a href=""><img src="../images/instagram.svg"> Instagram</a></li>
+                        <li><a href=""><img src="../images/facebook.svg"> Facebook</a></li>
+                        <li><a href=""><img src="../images/twitter.svg"> Twitter</a></li>
                     </ul>
         
                 </article>
@@ -113,7 +147,7 @@
                         <li><a href="../html/index.html">Inicio</a></li>
                         <li><a href="../html/destinos.html">Destinos</a></li>
                         <li><a href="../html/nosotros.html">Nosotros</a></li>
-                        <li><a href="../html/trabaja.html">Trabaja con nosotros</a></li>
+                        <li><a href="../html/trabaja.html">Trabajá con nosotros</a></li>
 
                     </ul>
         
