@@ -1,0 +1,216 @@
+/*abstracts*/
+/*variables*/
+/*bases*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+h1 {
+  text-align: center;
+  text-decoration: underline black; }
+
+h2 {
+  text-align: center; }
+
+header {
+  background-color: cornsilk;
+  padding-bottom: 30px; }
+
+footer {
+  background-color: cornsilk; }
+
+a {
+  text-decoration: none; }
+
+.row {
+  text-align: center; }
+
+.titulos {
+  padding: 20px; }
+
+/*layout - header*/
+.titulo {
+  font-size: 40px;
+  color: #aaa;
+  padding-left: 133px; }
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 5px 0;
+  box-shadow: 0px 5px 0px #dedede; }
+  nav ul {
+    list-style: none;
+    text-align: center; }
+    nav ul li {
+      display: inline-block; }
+      nav ul li a {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        color: #aaa;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin: 0 10px; }
+        nav ul li a:after, nav ul li a:before {
+          transition: all .5s; }
+        nav ul li a:hover {
+          color: #555; }
+
+/*pages*/
+.contenedor__contacto {
+  align-items: center;
+  text-align: center;
+  padding: 20px; }
+
+.contacto_tittle {
+  padding: 20px; }
+
+.formulario__contacto {
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  width: 400px; }
+
+.contenedor__nosotros {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.nosotros__texto {
+  padding: 20px; }
+
+.link__trabaja {
+  padding: 20px; }
+
+.imagen__carousel {
+  width: 100%; }
+
+.caja__presentacion {
+  padding: 20px; }
+
+/*components*/
+/* --- Tarjetas destinos --- */
+.destino__titulo {
+  font-size: 40px;
+  padding: 20px; }
+
+.destinos {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center; }
+
+.tarjeta {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  padding: 20px; }
+
+.tarjeta__title {
+  font-size: 25px; }
+
+.tarjeta__img {
+  width: 75%;
+  border-radius: 10px; }
+
+.mas__info {
+  position: absolute;
+  text-decoration: none;
+  text-align: center;
+  color: aliceblue;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: background-color .5s; }
+
+.mas__info:hover {
+  color: black;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: aliceblue;
+  opacity: 0.8; }
+
+/* ----- Tarjeta contacto ------*/
+.contenedor__tarjeta {
+  padding: 20px; }
+
+.tarjeta__contacto {
+  background-color: lightblue;
+  padding: 20px;
+  border-radius: 20px;
+  border: 0.5px solid black; }
+
+/*layout - footer*/
+.contenedor__footer {
+  display: flex;
+  text-align: center;
+  justify-content: center; }
+
+.caja__footer {
+  width: 50%; }
+
+.menu__footer {
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+  margin: 0px; }
+  .menu__footer li {
+    padding: 10px; }
+    .menu__footer li a {
+      color: black;
+      text-decoration: none;
+      width: 100px; }
+
+.contenedor__formulario__noticias {
+  text-align: center;
+  width: 100%;
+  padding: 20px; }
+
+/*media*/
+@media (max-width: 1399.98px) {
+  .imagen__inicio {
+    width: 300px; } }
+
+@media (max-width: 1199.98px) {
+  .contenedor__nosotros {
+    display: inline;
+    align-items: center;
+    justify-content: center; }
+  .imagen__reunion {
+    width: 400px;
+    align-items: center;
+    justify-content: center; }
+  .nosotros__texto {
+    font-size: 20px; } }
+
+@media (max-width: 575.98px) {
+  .imagen__inicio {
+    width: 300px; }
+  .imagen__carousel {
+    width: 150%; }
+  .titulo {
+    padding-left: 50px; }
+  .contenedor__nosotros {
+    display: inline;
+    align-items: center;
+    justify-content: center; }
+  .imagen__reunion {
+    width: 200px;
+    align-items: center;
+    justify-content: center; }
+  .nosotros__texto {
+    font-size: 10px; }
+  .formulario__contacto {
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    width: 300px; } }

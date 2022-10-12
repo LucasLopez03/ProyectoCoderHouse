@@ -1,0 +1,63 @@
+/* --- Tarjetas destinos --- */
+
+.destino__titulo{
+    font-size: 40px;
+    padding: 20px;
+}
+
+.destinos{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+
+.tarjeta{
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.tarjeta__title{
+    font-size: 25px;
+}
+
+.tarjeta__img{
+    width: 75%;
+    border-radius: 10px;
+}
+
+.mas__info{
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+    color: $color-info;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color .5s;
+}
+
+.mas__info:hover{
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: $color-info;
+    opacity: 0.8;
+}
+
+/* ----- Tarjeta contacto ------*/
+
+.contenedor__tarjeta{
+    padding: 20px;
+}
+
+.tarjeta__contacto{
+    background-color: $color-tarjeta-contacto;
+    padding: 20px;
+    border-radius: 20px;
+    border: 0.5px solid black;    
+}

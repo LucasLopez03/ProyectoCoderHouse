@@ -1,0 +1,55 @@
+@media (max-width: 1399.98px) { 
+    .imagen__inicio{
+        width: 300px;
+    }
+  }
+
+@media (max-width:  1199.98px) {
+    .contenedor__nosotros{
+        display: inline;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagen__reunion{
+        width: 400px;
+        align-items: center;
+        justify-content: center;
+    }
+    .nosotros__texto{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .imagen__inicio{
+        width: 300px;
+    }
+    .imagen__carousel{
+        width: 150%;
+
+    }
+    .titulo{
+        padding-left: 50px;
+    }
+    .contenedor__nosotros{
+        display: inline;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagen__reunion{
+        width: 200px;
+        align-items: center;
+        justify-content: center;
+    }
+    .nosotros__texto{
+        font-size: 10px;
+    }
+
+    .formulario__contacto{
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+        width: 300px;
+    }
+ }
