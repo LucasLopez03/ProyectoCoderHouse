@@ -130,13 +130,12 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: background-color .5s; }
-
-.mas__info:hover {
-  color: black;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: aliceblue;
-  opacity: 0.8; }
+  .mas__info:hover {
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: aliceblue;
+    opacity: 0.8; }
 
 /* ----- Tarjeta contacto ------*/
 .contenedor__tarjeta {
