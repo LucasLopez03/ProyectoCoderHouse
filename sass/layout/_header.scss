@@ -28,11 +28,12 @@ nav {
                 margin: 0 10px;
 
                 &:after, &:before{
-                    transition: all .5s;
+                    transition: transform .2s;
                 }
 
                 &:hover{
                     color: $color-hover-nav;
+                    transform: scale(1.1);
                 }
               }
 

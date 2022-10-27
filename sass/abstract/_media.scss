@@ -10,11 +10,19 @@
         align-items: center;
         justify-content: center;
     }
-    .imagen__reunion{
-        width: 400px;
+
+    .nosotros__img{
+
+        display: flex;
         align-items: center;
         justify-content: center;
+
+        img{
+            width: 400px;    
+        }
+
     }
+
     .nosotros__texto{
         font-size: 20px;
     }
@@ -36,11 +44,19 @@
         align-items: center;
         justify-content: center;
     }
-    .imagen__reunion{
-        width: 200px;
+
+    .nosotros__img{
+
+        display: flex;
         align-items: center;
         justify-content: center;
+
+        img{
+            width: 250px;    
+        }
+
     }
+
     .nosotros__texto{
         font-size: 10px;
     }
