@@ -14,12 +14,18 @@ h1 {
 h2 {
   text-align: center; }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
 header {
   background-color: cornsilk;
   padding-bottom: 30px; }
 
 footer {
-  background-color: cornsilk; }
+  background-color: cornsilk;
+  margin-top: auto; }
 
 a {
   text-decoration: none; }
@@ -188,6 +194,10 @@ nav {
   padding: 20px; }
 
 /*media*/
+@media (min-width: 1400px) {
+  .imagen__inicio {
+    width: 300px; } }
+
 @media (max-width: 1399.98px) {
   .imagen__inicio {
     width: 300px; } }
